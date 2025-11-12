@@ -1,0 +1,760 @@
+#1st programme
+#include <stdio.h>
+
+void main() {
+    // Write C code to test all the arthemetic operations
+   int a,b,sum,sub,multi,div,mod;
+   printf("enter first number 'a' and the second number 'b':\n");
+   scanf("%d%d",&a,&b);
+   a=10,b=5;
+   sum=a+b;
+   sub=a-b;
+   multi=a*b;
+   div=a/b;
+   mod=a%b;
+   printf("sum=%d,sub=%d,multi=%d,div=%d,mod=%d",sum,sub,multi,div,mod);
+}
+
+
+output
+enter first number 'a' and the second number 'b':
+10
+5
+sum=15,sub=5,multi=50,div=2,mod=0
+//shorter code
+#include <stdio.h>
+
+void main() {
+    // Write C code to test all the arthemetic operations
+   int a,b,sum,sub,multi,div,mod;
+   printf("enter first number 'a' and the second number 'b':\n");
+   scanf("%d%d",&a,&b);
+   printf("sum=%d,sub=%d,multi=%d,div=%d,mod=%d",a+b,a-b,a*b,a/b,a%b);
+}
+output
+enter first number 'a' and the second number 'b':
+10
+5
+sum=15,sub=5,multi=50,div=2,mod=0
+
+
+
+
+
+
+
+
+
+
+#2nd code
+#include <stdio.h>
+
+void main() {
+    // Write C code to test assignment operator
+   int a=6,b=4;
+   printf("a=%d,b=%d",a,b);
+      int temp;
+   temp=a;
+   a=b;
+   b=temp;
+   printf("a=%d,b=%d",a,b);
+}
+output
+a=6,b=4a=4,b=6
+
+
+
+
+
+
+#3rd programme
+                                                                                                                                                    
+#include <stdio.h> 
+
+// Write C code to test increament /decreament
+int main() {
+	int a = 10;
+	printf("value of a = %d\n", a); 
+	printf("post increment = %d\n",a++);
+	printf("value of a = %d\n", a);
+	printf("pre increment = %d\n",++a);
+	printf("value of a = %d\n", a);
+	printf("post decrement = %d\n", a--);
+	printf("value of a = %d\n", a);
+	printf("pre decrement = %d\n", --a);
+	printf("value of a = %d\n", a);
+
+	return 0;
+}
+output
+value of a = 10
+post increment = 10
+value of a = 11
+pre increment = 12
+value of a = 12
+post decrement = 12
+value of a = 11
+pre decrement = 10
+value of a = 10
+
+
+
+
+#4th programme
+#include <stdio.h>
+
+int main() {
+    // Write C code here to test logical operators
+   int a=10,b=5;
+   printf("and results=%d",a&&b);
+   printf("or results=%d",a||b);
+   printf("not B results=%d",!b);
+    return 0;
+}
+output:
+
+
+
+
+
+
+
+
+
+
+#5th programme
+#include <stdio.h>
+
+int main() {
+    // Write C code here to test a combination of relational and logical operators
+    //case 1
+   int a=10,b=5;
+   printf("(a>b)||(a==b)=%d",(a>b)||(a==b));
+   printf("(a<b)&&(a=b)=%d",(a<b)&&(a=b));
+   printf("!(a>=b)=%d",!(a>=b));
+    return 0;
+}
+output:
+(a>b)||(a==b)=1(a<b)&&(a=b)=0!(a>=b)=0
+
+
+
+
+
+
+
+
+#6th programme
+#include<stdio.h> 
+int main() {
+    // Write C code here to test a combination of relational and logical operators
+    //case 2
+   int a=6,b=8;
+   int c;
+   printf("(a>b)?a:b=%d",c=(a>b)?a:b);
+    return 0;
+}
+
+
+
+
+
+
+
+#7th programme
+#include <stdio.h>
+
+int main() {
+float radius=6, area;
+
+area = 3.14159 * radius * radius;
+
+// Display the result
+printf("The area of the circle is: %.2f\n", area);
+
+return 0;
+}
+
+
+
+
+
+#8th programme
+#include <stdio.h>
+
+int main() {
+    // Write C code here to test bitwise
+   int a=5,b=3;
+   printf("a&b result is %d\n",a&b);
+   printf("a&b result is %d\n",a|b);
+   printf("a&b result is %d\n",a^b);
+   printf("a&b result is %d\n",a <<1);
+   printf("a&b result is %d\n",a>>1);
+    return 0;
+}
+output:a&b result is 1
+a&b result is 7
+a&b result is 6
+a&b result is 10
+a&b result is 2
+
+
+
+
+
+
+#9th programme
+#include <stdio.h>
+
+int main() {
+    // Write C code here to test bitwise
+   int a=5;
+   printf("size of a ",sizeof(int));
+   printf("is %d ",sizeof(a));
+    return 0;
+}
+output:
+size of a is 4
+
+#10th programme
+#include <stdio.h>
+
+int main() {
+    // Write C code here to test comma operator
+    int a,b,c;
+    c=(a=5,b=0,a+b);
+    printf("c=%d",c);
+
+    return 0;
+}
+output:c=5
+
+#11th programme
+//to check if no is poisitve or negetive
+#include <stdio.h>
+
+int main() {
+
+    double num;
+    printf("Enter a number: ");
+    scanf("%lf", &num);
+    if (num <= 0.0) {
+        if (num == 0.0)
+            printf("You entered 0.");
+        else
+            printf("You entered a negative number.");
+    } 
+    else
+        printf("You entered a positive number.");
+
+    return 0;
+}
+#12th code
+#to test eligibility to vote
+#include <stdio.h>
+
+int main() {
+
+    int age;
+    printf("Enter age: ");
+    scanf("%d", &age);
+    if (age >=18) 
+    printf("you are elegible");
+    else
+        printf("You are ineligible");
+
+    return 0;
+}
+
+#13th programme
+#include <stdio.h>
+    // Write C code here to test switch
+int main() 
+{
+    int choice;
+    printf("eneter your choice btw 1-3;");
+    scanf("%d",&choice);
+    switch(choice)
+    {
+        case 1:
+        printf("user entered choice 1");
+        break;
+        case 2:
+        printf("user entered choice 2");
+        break;
+        case 3:
+        printf("user enetered choice 3");
+        break;
+    default:
+        printf("invalid choice");
+    }
+    return 0;
+}
+
+
+
+
+
+#14th programme
+#to test switch case 
+#include <stdio.h>
+
+int main() {
+
+  char op;
+  double first, second;
+  printf("Enter an operator (+, -, *, /): ");
+  scanf("%c", &op);
+  printf("Enter two operands: ");
+  scanf("%lf %lf", &first, &second);
+
+  switch (op) {
+    case '+':
+      printf("%.1lf + %.1lf = %.1lf", first, second, first + second);
+      break;
+    case '-':
+      printf("%.1lf - %.1lf = %.1lf", first, second, first - second);
+      break;
+    case '*':
+      printf("%.1lf * %.1lf = %.1lf", first, second, first * second);
+      break;
+    case '/':
+      printf("%.1lf / %.1lf = %.1lf", first, second, first / second);
+      break;
+    default:
+      printf("Error! operator is not correct");
+  }
+
+  return 0;
+}
+
+#15th programme
+
+#include<stdio.h>
+ 
+ int main() {
+  float m1,m2,m3,m4,m5;
+  float tot,avg;
+    printf("Enter the subjects:\n");
+        scanf("%f%f%f%f%f",&m1,&m2,&m3,&m4,&m5);
+        tot=m1+m2+m3+m4+m5;
+        avg=tot/5,avg;
+        printf("%f%f",tot,avg);
+        
+    
+
+
+if (avg>=90)
+      printf("grade a");
+    else if(avg>=80)
+      printf("grade b");
+      else if(avg>=70)
+      printf("grade c");
+      else if(avg>=60)
+      printf("grade d");
+      else if(avg>=50)
+      printf("grade e");
+     else printf("fail");
+     
+     return 0;
+}
+
+
+
+#16th programme
+ #include <stdio.h>
+
+int main() {
+    int num;
+    printf("enter your number");
+    scanf("%d",&num);
+    if (num%?==0)
+    printf("the given number %d is even",num);
+    else
+    printf("the given number %d is odd",num);
+    return 0
+}
+#17th programme
+
+#include <stdio.h>
+
+int main() {
+    // Write C code here to test for loop 
+ int i;
+ for (i=1 ; i<=5; i++)
+ printf("iteration:%d \n",i);
+ 
+return 0;
+  
+    
+}
+
+
+
+#18th programme
+#include <stdio.h>
+
+int main() {
+    // Write C code here to test while loop
+ int i=1;
+  while (i<=5){
+ printf("count:%d \n",i);
+ i++;
+}
+ 
+return 0;
+  
+    
+}
+
+
+
+
+
+19th programme
+#include <stdio.h>
+
+int main() {
+    // Write C code here to test do-while loop
+ int i=1;
+  do{
+     printf("i=%d\n",i);
+     i++;
+      
+  }
+ while(i<=5);
+ return 0;
+ i++;
+}
+
+
+
+
+
+
+
+20th programme
+#include <stdio.h>
+
+int main() {
+    // Write C code here to find sum of n numbers
+ int n,i,sum=0;
+ printf("enter n:\n");
+ scanf("%d",&n);
+
+ for (i=1 ; i<=n; i++)
+ {sum=sum+i;
+ }
+ printf("Sum of %d numbers is %d",n,sum);
+return 0;
+}
+
+
+21th programme
+#include <stdio.h>
+
+int main() {
+    // Write C code here to test while loop
+ int i=1,n,sum=0;
+
+ printf("enter n \n",i);
+ scanf("%d",&n);
+ 
+ while(i<=n)
+ {sum=sum+i;
+ i++;
+ }
+ printf("Sum of %d numbers is %d",n,sum);
+return 0;
+  
+    
+
+
+
+
+}
+
+#22th programme
+#include <stdio.h>
+
+int main() {
+    // Write C code here to make a multiplication table of any number
+ int n,i;
+ printf("enter the table");
+ scanf("%d",&n);
+  for(i=1;i<=10;i++)
+  {
+printf("%d*%d=%d\n",n,i,n*i);
+ 
+  }
+ 
+ return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    // Write C code here to make a multiplication table of any number
+ int n,i,fact=1;
+ printf("factorial");
+ scanf("%d",&n);
+  for(i=n;i>=1;i--)
+  {fact=fact*i;
+  }
+
+  printf("factorial of %d is %d",n,fact);
+ 
+
+ return 0;
+}
+
+
+#23rd programme
+#include<stdio.h>
+int main()
+{
+    int a,b=5,c=11;
+    printf("enter a number");
+    scanf("%d",&a);
+    
+
+    if (a%b==0&&a%c==0)
+    {
+    printf("%d is divisble by 5 and 11");
+    }
+    else 
+    {
+     printf("%d is indivisble by 5 and 11");
+    }     
+        return 0;
+    
+
+
+
+}
+
+#24th programme
+to print first 10 natural numbers
+#include<stdio.h>
+int main()
+{
+    int i;
+    for (i=1;i<=10;i++)
+    {
+        printf("%d\n",i);
+    }
+ 
+        return 0;
+    
+
+
+
+}
+#25th programme
+//to check leap year
+
+
+
+
+#include<stdio.h>
+  int main()
+{
+    int a;
+    printf("Enter a year:");
+    scanf("%d",&a);   
+    if (a%4==0||a%400==0)
+     {
+     printf("%d is a leap year",a);
+         
+  }
+    else
+  {
+     printf("%d is not a leap year",a);
+  }
+    return 0;
+    
+
+
+
+}
+
+
+#26th programme
+
+#include <stdio.h> 
+int main()
+{
+    int num,sum=0;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    while(num>0)
+    {
+        int digit=num%10;
+        sum=sum+digit;
+        num=num/10;
+    }
+    printf("Sum of digits is %d",sum);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+#27Th programme
+ number is a prime number:
+#include <stdio.h>
+
+int main() {
+    int num, i, isPrime = 1;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num <= 1) {
+        isPrime = 0; 
+    } else {
+        for (i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = 0;  
+                break;
+            }
+        }
+    }
+
+    if (isPrime)
+        printf("%d is a prime number.\n", num);
+    else
+        printf("%d is not a prime number.\n", num);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+#28th programme
+#include <stdio.h>
+int square(int number) {
+return number * number;
+}
+int main() {
+int number;
+printf("Enter a number: ");
+scanf("%d", &number);
+printf("Square of %d is %d
+", number, square(number));
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#29 programme
+//even or odd using functiions
+#include<stdio.h>
+void evenodd(int num)
+{
+    if(num%2==0)
+printf("%d is even",num);
+else
+printf("%d is odd",num);
+}
+int main()
+{int n;
+printf("enter n");
+scanf("%d",&n);
+evenodd(n);
+return 0;
+}
+
+#30th programme
+//sum of digits of a number
+#include<stdio.h>
+
+int getSum(int n)
+{ 
+   int sum = 0;
+   while (n != 0)
+   {
+       sum = sum + n % 10;
+       n = n/10;
+   }
+   return sum;
+}
+
+int main()
+{
+  int n = 687;
+  printf(" %d ", getSum(n));
+  return 0;
+}
+#31st programme
+//programme to find factorial of a number
+#include <stdio.h>
+
+int factorial(int n) {
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact = fact * i;
+    }
+    return fact;
+}
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num < 0)
+        printf("Factorial is not defined for negative numbers.\n");
+    else
+        printf("Factorial of %d is %d\n", num, factorial(num));
+
+    return 0;
+}
+
+#32nd programme
+#include <stdio.h>
+
+// Function to find the largest number
+int largest(int a, int b, int c) {
+    if (a >= b && a >= c)
+        return a;
+    else if (b >= a && b >= c)
+        return b;
+    else
+        return c;
+}
+
+int main() {
+    int num1, num2, num3;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    printf("The largest number is: %d\n", largest(num1, num2, num3));
+
+    return 0;
+}
