@@ -606,7 +606,7 @@ int main()
 
 
 
-#27Th programme
+#27th programme
  number is a prime number:
 #include <stdio.h>
 
@@ -642,8 +642,8 @@ int main() {
 
 
 
-
 #28th programme
+//with arguments with return
 #include <stdio.h>
 int square(int number) {
 return number * number;
@@ -657,7 +657,50 @@ printf("Square of %d is %d
 return 0;
 }
 
+#include <stdio.h>
+// without argument
+// without return
+void sqr() {
+	int a = 5;
+	printf("square = %d", a * a);
+}
 
+int main() {
+	sqr();
+	return 0;
+}
+//with return
+//without argument
+int main() {
+	int a = 5;
+	int sqra = sqr(a);
+	printf("square ] %d", sqra);
+	return 0;
+}
+
+int sqr() {
+	int a = 10;
+	return a * a;
+}
+
+int main() {
+	int sqra = sqr();
+	printf("square = %d", sqra);
+	return 0;
+}
+
+//without return
+//with argument
+void sqr(int a) {
+	int sqra = a * a;
+	printf("sqare = %d", sqra);
+}
+
+int main() {
+	int a = 10;
+	sqr(a);
+	return 0;
+}
 
 
 
