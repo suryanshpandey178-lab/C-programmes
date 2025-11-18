@@ -1,3 +1,5 @@
+
+//to recieve an inpuut from user
 #include <stdio.h>
 
 int main() {
